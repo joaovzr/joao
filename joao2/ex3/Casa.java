@@ -4,11 +4,9 @@ public class Casa {
     public String tipo;
     public double area;
 
-    // Construtor vazio (padrão)
     public Casa() {
     }
 
-    // Construtor com todos os atributos
     public Casa(String endereco, double preco, String tipo, double area) {
         this.endereco = endereco;
         this.preco = preco;

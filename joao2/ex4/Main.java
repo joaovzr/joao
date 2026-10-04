@@ -5,7 +5,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         Tabuada tabuada = new Tabuada();
 
-        System.out.print("Digite um número inteiro: ");
+        System.out.print("Digite um número: ");
         int numero = sc.nextInt();
 
         tabuada.exibirTabuada(numero);

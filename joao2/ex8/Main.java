@@ -39,7 +39,6 @@ public class Main {
         System.out.print("Idade: ");
         int idade = Integer.parseInt(sc.nextLine().trim());
 
-        // Validação de idade com AND
         if (!(idade >= 16 && idade <= 99)) {
             System.out.println("Idade inválida para ingressar no ensino superior. Cadastro não realizado.");
             return;
@@ -51,7 +50,6 @@ public class Main {
         System.out.print("Participa de projeto de extensão? (s/n): ");
         boolean projetoExtensao = sc.nextLine().trim().equalsIgnoreCase("s");
 
-        // Validação de benefício com OR
         boolean temAuxilio = renda < 1500.00 || projetoExtensao;
 
         System.out.println("Aluno " + nome + " cadastrado com sucesso!");
@@ -75,7 +73,6 @@ public class Main {
         System.out.print("É bacharel? (s/n): ");
         boolean ehBacharel = sc.nextLine().trim().equalsIgnoreCase("s");
 
-        // Parênteses isolam a verificação da formação da de experiência
         if (anosExperiencia > 2 && (temPosGraduacao == true || ehBacharel == true)) {
             System.out.println("Professor " + nome + " cadastrado com status: Efetivo");
         } else {

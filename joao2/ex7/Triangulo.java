@@ -14,7 +14,6 @@ public class Triangulo extends FormaGeometrica {
         return ladoA + ladoB + ladoC;
     }
 
-    // Fórmula de Herão: A = sqrt(p * (p-a) * (p-b) * (p-c)), com p = semiperímetro
     @Override
     public double calcularArea() {
         double p = calcularPerimetro() / 2;

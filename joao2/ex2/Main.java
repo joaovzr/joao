@@ -9,9 +9,9 @@ public class Main {
         pessoa.setIdade(sc.nextInt());
 
         if (pessoa.getIdade() >= 18) {
-            System.out.println("Apta a tirar a carteira de motorista.");
+            System.out.println("Pode tirar a carteira de motorista.");
         } else {
-            System.out.println("Não está apta a tirar a carteira de motorista.");
+            System.out.println("Não pode tirar a carteira de motorista.");
         }
 
         sc.close();

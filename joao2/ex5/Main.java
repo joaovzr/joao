@@ -8,7 +8,6 @@ public class Main {
         f.setCargo("Auxiliar Administrativo");
         f.setDepartamento("Financeiro");
 
-        // Operador relacional para definir se é aprendiz
         if (f.getIdade() <= 16) {
             f.setAprendiz(true);
         } else {
